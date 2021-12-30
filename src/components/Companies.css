@@ -1,0 +1,29 @@
+section.companies .container .company-list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+
+@media screen and (max-width: 797px){
+    section.companies .container .company-list{
+        grid-template-columns: repeat(3, 1fr);
+    }    
+}
+
+@media screen and (max-width: 540px){
+    section.companies .container .company-list{
+        grid-template-columns: repeat(3, 1fr);
+    }    
+}
+
+@media screen and (max-width: 459px){
+    section.companies .container .company-list{
+        grid-template-columns: 1fr 1fr;
+    }    
+}
+
+@media screen and (max-width: 250px){
+    section.companies .container .company-list{
+        grid-template-columns: 1fr;
+    }    
+}

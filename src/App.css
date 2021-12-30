@@ -1,0 +1,351 @@
+:root {
+  --primary: #5d69e5;
+  --darkend-primary: #3843b6;
+  --bg-dark: #101113;
+  --bg-off-black: #27282b;
+}
+
+button {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+}
+
+.bg-black {
+  background: black;
+  color: white;
+}
+
+.bg-dark {
+  background: var(--bg-dark) !important;
+}
+
+.bg-secondary {
+  background: var(--bg-off-black) !important;
+}
+
+.text-secondary {
+  color: var(--bg-off-black);
+}
+
+.bg-primary,
+.btn-primary {
+  background: var(--primary);
+  border: var(--primary);
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background: var(--darkend-primary);
+  border: var(--darkend-primary);
+  outline: var(--darkend-primary);
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+section .section-header {
+  width: 700px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section.integrate .section-head p {
+  width: 600px;
+  max-width: 100%;
+}
+
+section .section-header h1 {
+  font-weight: bold;
+}
+
+.feature-cards .rowe {
+  width: fit-content;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.feature-card {
+  border-radius: 10px;
+  max-width: 250px;
+}
+
+section.interface {
+  height: 600px;
+  overflow: hidden;
+}
+
+section .image-wrapper {
+  padding: 2rem;
+  border-radius: 10px;
+  background: url(./images/bg-pink.jpg);
+}
+
+section.cycles .image-wrapper {
+  background: url(./images/bg-pink-2.jpg);
+}
+
+section .image-wrapper img {
+  border-radius: 4px;
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+section.roadmap,
+section.cycles {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
+
+section.interface .image-wrapper,
+section.roadmap .image-wrapper {
+  position: relative;
+  height: 800px;
+  width: 1200px;
+  right: -150px;
+}
+
+section.interface .image-wrapper img,
+section.roadmap .image-wrapper img,
+section.cycles .image-wrapper img {
+  position: absolute;
+}
+
+section.cycles .image-wrapper {
+  position: relative;
+  height: 800px;
+  width: 1200px;
+  left: -150px;
+}
+
+section .text {
+  width: 300px;
+  max-width: 100%;
+}
+
+section.interface .image-wrapper .one {
+  right: -6rem;
+  top: 16rem;
+  z-index: 10;
+}
+
+section.interface .image-wrapper .two {
+  right: -10rem;
+  top: 3rem;
+  z-index: 9;
+}
+
+section.command-line .image-wrapper {
+  background: url(./images/bg-orange.jpg);
+}
+
+section.cycles img {
+  height: 70%;
+  top: 10%;
+  right: 10%;
+}
+
+section.roadmap img {
+  height: 70%;
+  top: 10%;
+  left: 10%;
+}
+
+section.integrate .card-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+section.integrate .card-group.type-two {
+  gap: 1rem;
+}
+
+section .card-item {
+  display: flex;
+  align-items: center;
+}
+
+section.integrate .card-group.type-one img {
+  border-radius: 4px;
+}
+
+section.integrate .card-group.type-one .card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+section.integrate .blue {
+  background: linear-gradient(
+    rgb(34, 34, 228),
+    rgb(14, 80, 180),
+    rgb(0, 140, 255)
+  );
+}
+
+section.integrate .light-blue {
+  background: linear-gradient(
+    rgb(60, 103, 247),
+    rgb(75, 141, 241),
+    rgb(129, 198, 255)
+  );
+}
+
+section.integrate .green {
+  background: linear-gradient(
+    rgb(60, 247, 144),
+    rgb(75, 241, 158),
+    rgb(129, 255, 238)
+  );
+}
+
+section.testimonial .testimonial-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+}
+
+section.testimonial .card-item {
+  align-items: stretch;
+  height: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+  .feature-cards .rowe {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  section.integrate .card-group.type-one,
+  section.integrate .card-group.type-two {
+    grid-template-columns: 1fr;
+  }
+
+  section.interface,
+  section.roadmap {
+    height: fit-content;
+    overflow: auto;
+    transition: all 0.3s ease-in;
+  }
+
+  section.cycles .text {
+    flex-flow: wrap-reverse;
+  }
+
+  section.interface .text,
+  section.cycles .text,
+  section.roadmap .text {
+    width: 100%;
+  }
+
+  section.interface .image-wrapper,
+  section.cycles .image-wrapper,
+  section.roadmap .image-wrapper {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    right: 0;
+    left: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+  }
+
+  section.interface .image-wrapper img {
+    position: absolute;
+    max-width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in;
+  }
+
+  section.roadmap .image-wrapper img,
+  section.cycles .image-wrapper img {
+    top: 50%;
+    left: 50%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+  }
+
+  section.interface .image-wrapper .one {
+    right: 0;
+    top: 12rem;
+    z-index: 10;
+    transition: all 0.3s ease-in;
+  }
+
+  section.interface .image-wrapper .two {
+    top: 9rem;
+    left: 20rem;
+    z-index: 9;
+    transition: all 0.3s ease-in;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  section.interface .image-wrapper,
+  section.cycles .image-wrapper,
+  section.roadmap .image-wrapper {
+    height: 200px;
+  }
+
+  .feature-card {
+    border-radius: 10px;
+    max-width: 100%;
+  }
+
+  section.roadmap .image-wrapper img {
+    max-width: 300px;
+  }
+
+  section.interface .image-wrapper img {
+    position: absolute;
+    max-width: 300px;
+    top: 0%;
+    left: 100%;
+    transform: translate(-90%, -80%);
+  }
+
+  section.roadmap .image-wrapper img {
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* height: 100%; */
+  }
+
+  section.interface .image-wrapper .two {
+    z-index: 1000;
+  }
+
+  .feature-cards .rowe {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,7 @@
+nav.navbar{
+    border-bottom: 1px solid var(--bg-off-black);
+}
+
+nav.navbar li{
+    padding: 0 5px;
+}
