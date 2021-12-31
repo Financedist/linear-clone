@@ -1,7 +1,61 @@
-nav.navbar{
-    border-bottom: 1px solid var(--bg-off-black);
+nav.navbar {
+  border-bottom: 1px solid var(--bg-off-black);
+  z-index: 1000;
 }
 
-nav.navbar li{
-    padding: 0 5px;
+nav.navbar li {
+  padding: 0 5px;
+}
+
+nav.navbar.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav.navbar.sticky .container {
+  z-index: 10000;
+}
+
+nav.navbar.minimised ul.main-menu {
+  display: block !important;
+  position: absolute;
+  top: 100%;
+  opacity: 0;
+  pointer-events: none;
+  left: 150px;
+  width: 100%;
+  background: var(--bg-off-black);
+  z-index: 100;
+  transition: all 0.3s ease-in;
+}
+
+nav.navbar.minimised ul.main-menu.open {
+  opacity: 1;
+  left: 0;
+  pointer-events: all;
+}
+
+nav.navbar.minimised ul.main-menu li {
+  cursor: pointer;
+  padding: 0.8rem 4rem;
+  transition: all 0.3s ease;
+}
+
+nav.navbar.minimised ul.main-menu li:hover {
+  background: #333;
+  padding-left: 5rem;
+}
+
+nav.navbar.minimised ul.main-menu li a:hover {
+  color: #ccc;
+}
+
+@media screen and (max-width: 450px) {
+  nav.navbar.minimised ul.main-menu li {
+    cursor: pointer;
+    padding: 0.8rem 2rem;
+    transition: all 0.3s ease;
+  }
 }

@@ -7,7 +7,7 @@ const Footer = () => {
       className="bg-dark"
       style={{ fontSize: "0.8rem", borderTop: "1px solid var(--bg-off-black)" }}
     >
-      <div className="container py-5 d-flex align-items-center justify-content-between">
+      <div className="container py-5 d-md-flex align-items-center justify-content-between">
         <div className="logo">
           <a href="/" className="text-secondary">
             <img src={Logo} alt={Logo} width="25px" />
@@ -15,7 +15,7 @@ const Footer = () => {
           </a>
         </div>
         <nav className="footer-nav">
-          <ul className="d-flex align-items-center justify-content-between">
+          <ul className="d-sm-flex my-3 my-md-0 mx-0 align-items-center justify-content-between">
             <li className="px-2">
               <a href="/" className="text-secondary">
                 Status

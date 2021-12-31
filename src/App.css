@@ -130,6 +130,7 @@ section.interface .image-wrapper img,
 section.roadmap .image-wrapper img,
 section.cycles .image-wrapper img {
   position: absolute;
+  z-index: 1;
 }
 
 section.cycles .image-wrapper {
