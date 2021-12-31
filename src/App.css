@@ -5,6 +5,10 @@
   --bg-off-black: #27282b;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 button {
   cursor: pointer;
 }
