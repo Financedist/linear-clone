@@ -58,4 +58,8 @@ nav.navbar.minimised ul.main-menu li a:hover {
     padding: 0.8rem 2rem;
     transition: all 0.3s ease;
   }
+  nav.navbar.minimised ul.main-menu li:hover {
+    background: #333;
+    padding-left: 3rem;
+  }
 }
