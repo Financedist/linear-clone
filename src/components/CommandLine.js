@@ -48,7 +48,7 @@ const CommandLine = () => {
           </p>
         </div>
         <div className="image-wrapper d-flex justify-content-center align-items-center">
-          <img src={CommandMenu} alt={CommandMenu} width="90%" />
+          <img src={CommandMenu} alt={CommandMenu} />
         </div>
       </div>
     </section>

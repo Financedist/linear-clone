@@ -162,7 +162,15 @@ section.interface .image-wrapper .two {
 }
 
 section.command-line .image-wrapper {
+  padding: 3rem 0;
+  height: 500px;
   background: url(./images/bg-orange.jpg);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section.command-line .image-wrapper img {
+  max-width: 600px;
 }
 
 section.cycles img {
