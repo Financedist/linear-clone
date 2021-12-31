@@ -255,6 +255,14 @@ section.testimonial .card-item {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  section.command-line .image-wrapper {
+    height: fit-content;
+  }
+
+  section.command-line .image-wrapper img {
+    width: 80%;
+  }
+
   section.integrate .card-group.type-one,
   section.integrate .card-group.type-two {
     grid-template-columns: 1fr;

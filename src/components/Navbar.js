@@ -93,7 +93,7 @@ const Navbar = () => {
           </li>
         </ul>
         <button
-          className="btn btn-light d-block d-lg-none"
+          className="btn btn-dark d-block d-lg-none"
           onClick={handleNavToggle}
         >
           =
