@@ -76,7 +76,7 @@ const Integrate = () => {
             imgOne={<img src={Zapier} alt={Zapier} />}
             titleOne="Connect with 1000+ tools using Zapier"
             textOne="Create new issues based on triggers from Zapier applications."
-            imgTwo={<img src={Zapier} alt={Zapier} />}
+            imgTwo={<img src={Github} alt={Github} />}
             titleTwo="Custom workflows using our API"
             textTwo="Query and mutate data using our GraphQL API to build custom workflows."
           />

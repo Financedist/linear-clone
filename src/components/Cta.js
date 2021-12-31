@@ -3,7 +3,7 @@ import Logo from "../images/linear.png";
 
 const Cta = () => {
   return (
-    <section className="cta bg-dark text-light text-center">
+    <section className="cta bg-dark text-light text-center py-5">
       <div className="container py-5">
         <img
           src={Logo}

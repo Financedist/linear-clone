@@ -1,4 +1,5 @@
 import React from "react";
+import Video from "../images/video1.mp4";
 
 const Media = () => {
   return (
@@ -9,7 +10,7 @@ const Media = () => {
           linear.fm
         </div>
         <div
-          className="d-md-flex bg-secondary p-4"
+          className="row bg-secondary p-4"
           style={{
             width: "800px",
             maxWidth: "100%",
@@ -17,18 +18,10 @@ const Media = () => {
             borderRadius: "10px",
           }}
         >
-          <div className="vidwrapper text-center">
-            <video
-              controls
-              autoPlay
-              poster="https://image.mux.com/ohgddJyrVctP500y4S902Gzp4ef59mJA005vjbaE3h1Fe4/thumbnail.png?width=640&amp;fit_mode=preserve&amp;time=1"
-              height=""
-              width="100%"
-              src="blob:https://linear.app/c73baa7b-4322-4cde-beae-6adc249cc5fa"
-              __idm_id__="154443777"
-            ></video>
+          <div className="col-md-6 vidwrapper text-center">
+            <video controls src={Video} className="img-fluid" />
           </div>
-          <div className="founder-text px-5">
+          <div className="founder-text col-md-6 px-5">
             <div className="head mb-3">
               <strong>William M. Tsikata</strong>
               <p>CEO, Founder</p>

@@ -51,7 +51,7 @@ const Features = () => {
 
 const Card = ({ header, title, text }) => {
   return (
-    <div className="feature-card bg-secondary p-4">
+    <div className="feature-card bg-secondary p-4 p-md-5">
       <span className="text-primary">{header}</span>
       <p className="text-light mt-2" style={{ margin: 0 }}>
         {title}

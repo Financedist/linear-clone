@@ -5,6 +5,7 @@ import Companies from "./components/Companies";
 import Cta from "./components/Cta";
 import Cycles from "./components/Cycles";
 import Features from "./components/Features";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Integrate from "./components/Integrate";
 import Interface from "./components/Interface";
@@ -27,7 +28,7 @@ function App() {
       <Testimonial />
       <Media />
       <Cta />
-      <div className="space" style={{ height: "500px" }}></div>
+      <Footer />
     </div>
   );
 }

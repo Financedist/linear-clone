@@ -88,7 +88,7 @@ section .section-header h1 {
 
 .feature-card {
   border-radius: 10px;
-  max-width: 250px;
+  max-width: 300px;
 }
 
 section.interface {
@@ -140,8 +140,12 @@ section.cycles .image-wrapper {
 }
 
 section .text {
-  width: 300px;
+  width: 350px;
   max-width: 100%;
+}
+
+section .text h2 {
+  font-weight: bold;
 }
 
 section.interface .image-wrapper .one {
@@ -234,6 +238,7 @@ section.testimonial .testimonial-cards {
 section.testimonial .card-item {
   align-items: stretch;
   height: fit-content;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 2);
 }
 
 @media screen and (max-width: 768px) {
@@ -255,6 +260,10 @@ section.testimonial .card-item {
 
   section.cycles .text {
     flex-flow: wrap-reverse;
+  }
+
+  section.testimonial .testimonial-cards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
   section.interface .text,
@@ -314,6 +323,10 @@ section.testimonial .card-item {
   section.cycles .image-wrapper,
   section.roadmap .image-wrapper {
     height: 200px;
+  }
+
+  section.testimonial .testimonial-cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
   .feature-card {
